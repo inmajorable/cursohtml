@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Ficha de Nuevo Socio</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="explicacion.css">
+    <link rel="icon" href="new.ico" type="image/x-icon">
+    <link rel="stylesheet" href="20231106form001.css">
 </head>
 <body>
     <h1>Ficha de Nuevo Socio</h1>
@@ -22,15 +22,17 @@
         <input type="number" id="edad" name="edad" required>
         <br>
         
-        <label class="radio-label">
-            <input type="radio" name="genero" value="Masculino"> Masculino
-        </label>
-        <label class="radio-label">
-            <input type="radio" name="genero" value="Femenino"> Femenino
+        <label for="sexo" class="radio-label"> <!--Radio - para selección 
+            única-->
+            <input type="radio" id="sexo" name="genero" value="Masculino"> Masculino
+            <input type="radio" id="sexo" name="genero" value="Femenino"> Femenino
+            <input type="radio" id="sexo" name="genero" value="Otro" checked>Otro 
         </label>
         <br>
+        <br>
         
-        <label for="email">Correo Electrónico:</label>
+        <label for="email">Correo Electrónico: </label><!--Será necesario que 
+            tenga formato de email-->
         <input type="email" id="email" name="email" required>
         <br>
         
@@ -38,7 +40,7 @@
         <input type="file" id="foto" name="foto" accept="image/*" required>
         <br>
         
-        <input type="submit" value="Enviar">
+        <input type="submit" value="ENVIAR">
     </form>
 </body>
 </html>
