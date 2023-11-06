@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(0, 0, 255, 0.1);
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  width: 400px;
+  margin: 10px auto;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  width:100%;
+  border:2px solid black;
+  margin-top: 15px;
+}
