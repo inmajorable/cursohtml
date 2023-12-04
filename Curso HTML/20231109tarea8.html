@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 8 · Formulario</title>
+
+    <style>
+        /*REVISAR*/
+        body{
+            background-color: antiquewhite;
+        }
+        label{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        input{
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button{
+            background-color: blue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="form.php">
+        <label for="nombre">Nombre de usuario:*</label><br>
+        <input type="text" name="nombre" id="nombre" required>
+        <br>
+        <label for="password">Contraseña:*</label><br>
+        <input type="password" name="contrasenya" id="contrasenya" required>
+        <br>
+        <button type="submit" value="Registrarse">
+    </form>
+</body>
+</html>

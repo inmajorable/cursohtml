@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Definir una animación llamada "desplazar" mediante reglas Keyframe*/
+        /*ease: animación comienza lentamente, se acelera en medio y termina lentamente*/
+        @keyframes desplazar {
+            from {/*es posible utilizar FROM/TO o bien 0%/100%*/
+                transform: translateX(0);/*lo traslada en el eje X*/
+            }
+            to {
+                transform: translateX(100px);
+            }
+        }
+
+        @keyframes apagarse {
+            0% {/*es posible utilizar FROM/TO o bien 0%/100%*/
+                opacity: 0;
+            }
+            100% {
+                opacity: 100;
+            }
+        }
+
+        @keyframes rotar {
+            0% {
+                transform: rotate(0deg);/*corresponde con horizontal*/
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes cambio-de-color {
+            0% {
+                background-color: black;
+            }
+            50% {
+                background-color: rgb(249, 249, 109);
+            }
+            100% {
+                background-color: white;
+            }
+        }
+        
+        /*Aplicar la animación al cuadrado*/
+        div {
+            width: 250px;
+            height: 20px;
+            background-color: #64b0e3;
+            border:1px solid black;
+            /*animation: desplazar 5s ease infinite 0s; */
+            /*animation: apagarse 0.2s ease infinite 0s;*/
+            animation: rotar 1s ease infinite 0s;
+            /*animation: cambio-de-color 2s ease-in-out infinite;*/
+            vertical-align: center;
+            padding: 20px;
+        }
+        p{
+            width: 280px;
+            height: 20px;
+            background-color: #34db4a;
+            border:1px solid black;
+            /*animation: desplazar 5s ease infinite 0s; */
+            /*animation: apagarse 0.2s ease infinite 0s;*/
+            /*animation: rotar 1s ease infinite 0s;*/
+            animation: cambio-de-color 2s ease-in-out infinite;
+            vertical-align: center;
+            padding: 20px;           
+        }
+
+        div:hover { /*hover, cuando pasamos el puntero por encima*/
+            animation: cambio-de-color 2s ease-in-out infinite;
+            /*ease-in-out: La animación comienza lentamente, acelera en el medio y luego desacelera 
+            al final.*/
+        }
+        p:hover{
+            animation: desplazar 5s ease infinite 0s;
+        }
+        </style>
+</head>
+<body>
+    <div>ESTE ES UN TEXTO DENTRO DEL div</div>
+    <br>
+    <br>    
+    <p>Esta es otra animación</p>
+</body>
+</html>

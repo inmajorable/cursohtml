@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moneda</title>
+</head>
+<body>
+  <h1>Conversor de Moneda</h1>
+  <form>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" step="0.01" required>
+    <br>
+    <label for="currencyOrigin">Originary currency:</label>
+    <select id="currencyOrigin">
+      <option value="$">$ USD</option>
+      <option value="€">€ EUR</option>
+    </select>
+    <br>
+    <label for="monedaDestino">Moneda de Destino:</label>
+    <select id="monedaDestino">
+        <option value="€">Euro EUR</option>
+        <option value="$">$ USD</option>
+    </select>
+    <br>
+    <button id="convertirBtn" type="button">Convertir</button>
+  </form>
+  <div id="resultado"></div>
+
+      <script>
+        function convertirMoneda() {
+        const quantity = parseFloat(document.getElementById("quantity").value);
+        const currencyOrigin = document.getElementById("currencyOrigin").value;
+        const monedaDestino = document.getElementById("monedaDestino").value;
+        const resultado = document.getElementById("resultado");
+
+        const tasaUSDToEUR = 0.85;
+        const tasaEURToUSD = 1.18;
+
+        let montoConvertido;
+
+        if (currencyOrigin === "$" && monedaDestino === "€") {
+            montoConvertido = quantity * tasaUSDToEUR;
+        } else if (currencyOrigin === "€" && monedaDestino === "$") {
+            montoConvertido = quantity * tasaEURToUSD;
+        } else {
+            // Manejar el caso en el que las monedas sean iguales
+            resultado.textContent = "Selecciona monedas diferentes.";
+            return;
+        }
+
+        // Resultado de la conversión
+        resultado.textContent = `El resultado de la conversión es: ${montoConvertido.toFixed(2)} ${monedaDestino}`;
+        }
+
+        // Asignar la función "convertirMoneda" al evento click del botón "Convertir"
+        document.getElementById("convertirBtn").addEventListener("click", convertirMoneda);
+      </script>
+
+</body>
+
+</html>

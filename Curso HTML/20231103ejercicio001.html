@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Curso de HTML</title><!--Aquí nos deja el título visible en la pestaña 
+      superior de la página web-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="2023estilosejercicio001.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>Bienvenidos al curso de HTML5</h1>
+    </header>
+    
+    <nav><!--Proporciona una sección para enlaces de navegación-->
+      <ul><!--UL es un elenco, una lista-->
+        <!--con LI tenemos línea, y con A tenemos anchor para enlaces ancla-->
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#estructura">Estructura</a></li>
+        <li><a href="#contenido">Contenido</a></li>
+        <li><a href="#imagenes">Imágenes</a></li>
+        <li><a href="#enlaces">Enlaces</a></li>
+      </ul>
+    </nav>
+    
+    <main><!--indica siempre la parte principal de la página (contenido principal)-->
+      <section id="introduccion">
+        <h4>Introducción a HTML5</h4>
+        <p>HTML5 es el lenguaje de marcado utilizado para crear páginas web. Permite definir la 
+          estructura y el contenido de una página web utilizando etiquetas y elementos.</p>
+      </section>
+      
+      <section id="estructura">
+        <h3>Estructura Básica</h3>
+        <p>Una página web HTML5 consta de una estructura básica que incluye elementos como 
+          <!--Justo estos caracteres son para mostrar el corchete angular-->&lt;html&gt;, 
+          &lt;head&gt;, &lt;title&gt;, &lt;meta&gt;, &lt;body&gt;, y más.</p>
+      </section>
+      
+      <section id="contenido">
+        <h3>Insertar Contenido</h3>
+        <p>Puedes agregar texto, imágenes, listas y otros elementos para crear contenido en tu 
+          página web.</p>
+        <ul>
+          <li>Texto</li>
+          <li>Imágenes</li>
+          <li>Listas</li>
+        </ul>
+      </section>
+      
+      <section id="imagenes">
+        <!--recordar que la 'source' debe estar dentro de la biblioteca o directorio-->
+        <h3>Imágenes</h3>
+        <img id="imagen01" src="imagen.png" alt="Una imagen de ejemplo">
+        <br>
+        <img id="imagen02" src="imagen.png" alt="Misma imagen de ejemplo">
+        <!--Para alinear una imagen en HTML, tag class=center-->
+      </section>
+
+      <section id="enlaces">
+        <h3>Enlaces</h3>
+        <p>Puedes crear enlaces a otras páginas web utilizando la etiqueta &lt;a&gt;. Por ejemplo, 
+          puedes enlazar a la página de inicio de HTML5:</p>
+        <a href="https://www.w3.org/TR/html52/" target="_blank">Página de inicio de HTML5</a>
+      </section>
+    </main>
+    
+    <footer>
+      <p>© 2023 Mi Página de Ejemplo en el curso</p>
+    </footer>
+  </body>
+</html>

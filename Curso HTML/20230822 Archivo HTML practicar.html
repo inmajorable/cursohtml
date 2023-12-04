@@ -1,0 +1,58 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <titulo>MY FIRST FILE WITH ARCHIE</titulo>
+</head>
+<style>
+    div.image {
+        background: url("https://www.visitvalencia.com/sites/default/files/styles/gallery_default/public/media/media-images/images/Plaza-de-la-Virgen-VV-18731_1024-%20Foto_David_Rota.jpg");
+        width: 340px;
+        height: 220px;
+        background-size: contain !important;
+        transition: all ease .22s;
+    }
+
+    div.image:hover {
+        box-shadow: 2px 2px 10px grey;
+        transform: rotate(45deg);
+    }
+    img{
+        animation: el-nombre-de-mi-animacion 1s infinite;
+    }
+    @keyframes el-nombre-de-mi-animacion {
+        from{ transform: rotate(0deg);}
+        to{ transform: rotate(360deg);}
+    }
+</style>
+
+<body>
+    <p>Bienvenidos al archivo</p>
+
+    <h1>Hoy es el primer día que utilizo este portátil </h1>
+    <!-- Sólo se puede poner un único H1-->
+
+    <h2>Prueba de highlight dos</h2>
+
+    <h3> Prueba de h3 con espacio al principio</h3>
+
+    <h4> Prueba de h4 con dos espacios al inicio</h4>
+
+    <h5>Me he cansado de espacios para el h5</h5>
+
+    <h6>Último tipo de h6</h6>
+
+    <p>A veces, Antonio me ayuda a hacer estos archivos, bueno, en realidad no me ayuda, los hace él.</p>
+    <p>Claro, está fatal porque no aprendo.</p>
+    <p>También es verdad que se duerme y <b>ronca</b>.</p>
+    <p></p>
+
+    <a href="https://www.visitvalencia.com/">Web de Turismo</a>
+    <p></p>
+    <img src="https://www.visitvalencia.com/sites/default/files/styles/gallery_default/public/media/media-images/images/Plaza-de-la-Virgen-VV-18731_1024-%20Foto_David_Rota.jpg"
+        alt="Plaza" width="340" height="220">
+    <div class="image"></div>
+
+</body>
+
+</html>

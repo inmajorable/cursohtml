@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--visualización correcta en todos los dispositivos posibles-->
+    <title>Document</title>
+    <style>
+        div{
+            width: 280px;
+            height: 20px;
+            background-color: #3498db;
+            border: 1px solid black;
+            padding: 15px;
+            margin: 100px;
+            /*transform: rotate(15deg);*//*todos los elementos div van a rotar*/
+        }
+        /*aplicar una transformacion de escala al pasar el mouse sobre el cuadrado*/
+        div :hover{
+            /*transform: scale (1.2);*/
+            /*transform: skewX(30deg);*/
+            transform: rotate (90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>Ejemplo de Transformaciones</div>
+</body>
+</html>

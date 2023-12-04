@@ -1,0 +1,34 @@
+p {/* Estilos para selección ELEMENTOS*/
+    color: black;
+}
+a {
+    color: green;
+}
+
+.parrafo {/* Estilos para selección CLASES*/
+    background-color: #f0f0f0;
+}
+
+#parrafo1 {/* Estilos para selección IDs*/
+    font-weight: bold;
+}
+
+a[class="enlace"] {/* Estilos para selección ATRIBUTOS*/
+    /*¿esto es para el mensaje sugerencia?*/
+    text-decoration: none;
+    color: red;
+}
+
+* {/* Estilos para selección universal a TODOS los elementos de la página*/
+    margin: 0;
+    padding: 10px;
+}
+
+*:hover { /*los dos puntos son para el EVENTO*/
+    color: brown;
+    /*cursor: pointer; marca el puntero de flecha a manita*/
+}
+
+h1 {
+    color: blue;
+}

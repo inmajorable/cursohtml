@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22nov'23 · Bucle FOR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bucles FOR WHILE DOWHILE</h1>
+    <h2>No olvide pulsar F12 para ver el resultado</h2>
+
+    <button onclick="showEven(document.getElementById('valor'))">Aceptar</button>
+    <h2 id="valor"></h2>
+
+    <script>
+        //Bucle FOR
+        function showEven(maximo=20){
+            let value = document.getElementById("valor")
+            for (let i = 0, i <= maximo, i++){
+                if (i%2==0){
+                    if{
+                        (value.innerText ="");
+                    } 
+                }
+            }
+            console.log(showEven);
+            console.log(document.getElementsById);
+        }
+
+        showEven(10)
+
+
+        //Bucle WHILE, se ejecuta un bloque de código mientras una condición es verdadera
+        //Importante: debemos poner una condición que acabe el bucle
+        let i=1
+        while(i<10){
+            console.log(i);
+            i+=2;
+        }
+
+
+        //Bucle DO-WHILE, ejecuta bloque de código mientras condición sea verdadera
+        let l=2
+        do{
+            console.log(l);
+            l++;
+        } while (l<10)
+
+    </script>
+</body>
+</html>

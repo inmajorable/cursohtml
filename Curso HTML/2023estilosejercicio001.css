@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navegación */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline; /* Hace que no salte el párrafo y se quede en la misma línea*/
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none; /* Para que no aparezca subrayado el texto de enlace, 
+    sólo se ponga la manita*/
+    color: #00438a;
+    font-weight: bold;
+  }
+  
+
+  /* Contenido principal */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #717171;
+  }
+  
+  #introduccion{
+    background-color: #ddd;
+    border-radius: 3px;
+    border: none;
+  }
+
+  #imagen01 {
+    height: 120px;
+    width: 120px;
+  }
+  #imagen02{
+    max-width: 15%;
+    height: auto;
+    /*los siguientes 3 tags para que se centre una imagen en CSS*/
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* Pie de página */
+  footer {
+    background-color: #00438a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Estilos para enlaces */
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  a:hover { /*hover: el enlace sólo se subraya cuando pasamos el puntero encima*/
+    text-decoration: underline;
+  }

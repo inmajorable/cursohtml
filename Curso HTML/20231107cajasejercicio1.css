@@ -1,0 +1,37 @@
+/* Estilos para las cajas */
+.contenedor {
+    text-align: center;
+    border:1px solid green;
+    background-color: gainsboro;
+    font-family: system-ui;
+}
+
+/*OJO estas propiedades vienen para las clases 'caja roja, caja verde, caja azul' in love con esta opción*/
+/*OJO la clase se puede separar por palabras y aplica a cada una las propiedades elegidas*/
+.caja {
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    line-height: 65px; /*para bajar el texto de la línea*/
+    color: white;
+    font-weight: bold;    
+    display: inline-block;
+    border-radius: 5px;
+    
+    margin: 20px; /* Margen exterior */
+    padding: 15px; /* Relleno interior */
+    border: 5px solid #2980b9; /* Borde */
+}
+
+.roja {
+    background-color: #e74c3c;
+}
+
+.verde {
+    background-color: #27ae60;
+}
+
+.azul {
+    background-color: #3498db;
+    line-height: initial;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia imágenes</title>
+</head>
+
+<body>
+    <picture>
+    <!--muestra una imagen u otra según el responsive width de la página-->
+        <source media="(min-width: 800px)" srcset="grande.jpg">
+        <source media="(min-width: 400px)" srcset="mediano.jpg">
+        <img src="pequenyo.jpg" alt="Descripción alternativa de la imagen">
+    </picture>
+</body>
+</html>

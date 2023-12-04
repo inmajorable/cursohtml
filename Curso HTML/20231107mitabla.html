@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="20231107mitabla.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p>TABLA DE MASCOTAS</p>
+        <!--también se puede hacer-->
+        <!--<th colspan> sólo para el encabezado que ocupe todas las columnas-->
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Especie</th>
+                <th>Raza</th>
+                <th>Identificador</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+
+        <tbody><!--era más fácil alinear todas las columnas y poner ID sólo en el encabezado-->
+            <tr>
+                <td>perro</td>
+                <td>pastor alemán</td>
+                <td id="id">120034</td>
+                <td id="telf">+34 699855222</td>
+            </tr>
+            <tr>
+                <td>gato</td>
+                <td>egipcio</td>
+                <td id="id">002211</td>
+                <td id="telf">+34 699111111</td>
+            </tr>
+            <tr>
+                <td>serpiente</td>
+                <td>pitón</td>
+                <td id="id">009-VTF</td>
+                <td id="telf">+34 666555444</td>
+            </tr>
+            <tr>
+                <td>perro</td>
+                <td>mezcla</td>
+                <td id="id">004477</td>
+                <td id="telf">+34 699777333</td>
+            </tr>
+            <tr>
+                <td>hamster</td>
+                <td>común</td>
+                <td id="id">0027878-F1</td>
+                <td id="telf">+34 699555000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

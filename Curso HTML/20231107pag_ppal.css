@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #5a5a5a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    width: 250px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px; /*sepación en cada línea de la lista desde abajo*/
+    margin-top: 10px; /*separación de la lista desde arriba*/
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    flex-grow: 1; /*ocupa toda la pantalla posible*/
+    padding: 20px;
+}
+
+.contenido {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.navegacion {
+    display: flex;
+    flex: 1;
+}
+
+footer {
+    background-color: #616161;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

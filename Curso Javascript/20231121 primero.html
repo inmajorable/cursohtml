@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es, va, en, it, nl, gr">
+
+<!-- Comentarios en HTML-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer fichero</title>
+    <style> /*Recordar que es CSS*/
+        button{
+            width: 100px;
+            height: 30px;
+            color: black; 
+            background-color: bisque;
+        }
+    </style>
+    <script>
+        // Comentarios de JS
+        function my_alert(){
+            
+            //Tipo de variable
+            let edad = 30 //--> numérico --> const edad = 30
+            let ilikia = "Muy joven" //--> cadena texto o string  
+
+
+            // //Variable compuesta tipo ARRAY o vector
+            let colores = ["Magenta", "Cyan", "Verde"]
+            //alert(colores [1]) // para hacer una llamada de un index en concreto, marca la posición
+            // console.log(colores)
+            console.log(colores [1])
+            
+
+            // //Variable compuesta tipo OBJECT o ficha
+            const persona = { 
+                nombre: "Antonio", 
+                edad: 30, 
+                municipio: "Benimàmet", 
+                socio: true,
+            };
+            //alert(persona.municipio)
+            console.log(persona.socio)
+            console.log(persona.edad)
+            
+
+
+            //Conversión de numérico a string
+            let numero = 300
+            let cadena = String(numero) //SIEMPRE en Capitals
+            console.log(numero,cadena) //con coma, da los dos resultados. Con punto, decide dentro del objeto cuál coger
+            //alert(numero)
+            //alert(cadena)
+
+            //Conversión de string a numérico
+            let texto = "123"
+            let numbered = Number(texto)
+            console.log(texto, numbered)
+
+
+
+            //CONCATENAR, Sumar strings con numéricos
+            let numbered2 = texto + 11 //la variable texto es un string
+            console.log(numbered2) //la variable numbered2 también va a ser un string
+
+            let numbered3 = numbered + 10 //la variable numbered es numérica
+            console.log(numbered3) //esta variable también se comporta como numérica
+
+
+            //OPERADORES ARITMÉTICOS
+            var dividendo = 10;
+            var divisor = 3;
+            var resto = dividendo % divisor
+            console.log("El resto de " + dividendo + " entre " + divisor + ", nos da: " + resto)
+
+            //INSTRUCCIONES
+            let age = 12
+            if (age>=18){
+                console.log("Tarifa adulto")
+            }else if (age>=12){
+                console.log("Tarifa joven")
+            }else {
+                console.log("Tarifa infantil")
+            }
+
+
+            //OPERADORES COMPARACIÓN
+            //igualdad === o desigualdad estricta !==, hace diferencia entre un string y un numérico
+            if (3 == "5") {
+                //alert("Expresión verdadera!")
+            }else {
+                //alert("Expresión falsa")
+            }
+
+
+            //comparaciones con texto
+            let leeftijd = 19
+            if (leeftijd >= 18){
+                console.log("Eres mayor de edad. Bienvenid@!")
+            }else{
+                console.log("Eres menor de edad, no puedes entrar")
+            }
+
+
+            //OPERADORES LÓGICOS, AND &&, OR||, NOT!
+            let licencia = true
+            let edat = 20
+            if (licencia && edat>=18){
+                console.log("Puedes conducir, pero te falta coche")
+            }
+
+            let raining = true
+            if (!raining){
+                console.log("Puedes salir a jugar")
+            }else{
+                console.log("Te quedas en casa")
+            }
+
+            let estudiante = true
+            let desempleado = true
+            if (estudiante || desempleado){
+                console.log("Tienes descuento")
+            }
+
+
+            //OPERADORES ASIGNACIÓN
+            let a = 10
+            a += 5 //a = 5 + a  --> la nueva Asignación del valor de 'a' es lo que valía 'a' la última vez más 5
+            a -= 5
+            a *= 5
+            a /= 5
+            a %= 5
+            console.log(a) //me da el último valor de 'a'
+        }    
+    </script>
+</head>
+<body>
+    <button onclick="my_alert()">PULSA AQUÍ</button>
+</body>
+</html>

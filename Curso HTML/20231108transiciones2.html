@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo de transición CSS3</title>
+  <!--SIN CSS estilos asociados en el HTML-->
+  <style>
+    body {
+      width: 50%;
+      margin: 0 auto;
+    }
+    /*Cuando el usuario pasa el ratón por encima del elemento .element, 
+    fondo se vuelve negro, texto se vuelve blanco y elemento se escala un 10%. 
+    La transición dura 2 segundos y comienza 0.5 segundo después de que el usuario 
+    pasa el ratón por encima del elemento*/
+    
+    * {
+      transition: all 2s ease-in-out 0.5s;
+    }
+
+    .element:hover {
+      background-color: #c74a4a;
+      color: #ece2e2;
+      transform: scale(1.1);
+      border-radius: 5px;
+      padding: 5px;
+      text-align: justify;
+    }
+
+    button:hover {
+      background-color: rgb(252, 150, 167);
+      color: #e9e9e9;
+      transform: scale(1.5);/*no cambia tamaño pero da ese efecto de más grande que se busca*/
+    }
+
+</style>
+</head>
+
+<body>
+    <div class="element">
+        <h1>Título</h1>
+    <p>Este es un ejemplo de transición CSS3</p>  
+    </div>
+    <br>
+    <button>MI BOTÓN</button>
+</body>
+</html>

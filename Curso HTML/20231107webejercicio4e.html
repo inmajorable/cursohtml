@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilos generales de la página*/
+        body {
+            font-family: system-ui, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            overflow: auto; /* Las barras laterales de scroll saldrán si es necesario*/
+            border: 2px solid rgb(85, 0, 255);
+            border-radius: 5px;
+        }
+        .contenedor{
+            width: 600px;
+            margin: 0 auto;
+            overflow: auto; /* Las barras laterales de scroll saldrán si es necesario*/
+            border: 2px solid rgb(255, 0, 230));
+            border-radius: 5px;     
+        }
+        .left-column {
+            width: 50%;
+            float: left; /* Hace que la columna flote a la izquierda */
+            background-color: rgb(218, 203, 252);
+            padding: 0px; /*están juntos*/
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .right-column {
+            width: 50%;
+            float: left; /* Hace que la columna flote a la izquierda */
+            background-color: #ccc;
+            padding: 0px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-column">Columna Izquierda</div>
+        <div class="right-column">Columna Derecha</div>
+    </div>
+    <br>
+    <div class="contenedor">
+        <div class="left-column">Columna Izquierda</div>
+        <div class="right-column">Columna Derecha</div>
+    </div>
+</body>
+</html>

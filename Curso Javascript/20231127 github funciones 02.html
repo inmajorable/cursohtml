@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!--  REPASAR-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación de Contraseña</title>
+</head>
+
+<body>
+  <h1>Validación de Contraseña</h1>
+
+  <form>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" required>
+    <br>
+    <button id="validarBtn" type="button">Validar Contraseña</button>
+  </form>
+
+  <div id="resultado"></div> <!-- Necesario para dar resultado-->
+
+  <script>
+    // function validarContraExpresionRegular(stringToTest, expresionRegular) {
+    //     return expresionRegular.test(stringToTest);
+    // } 
+    function longitudCorrecta(contrasenya) {
+      return contrasenya.length >= 8;
+    }
+    function contieneMayuscula(contrasenya) {
+        return /[A-Z]/.test(contrasenya);
+    }
+    function contieneMinuscula(contrasenya) {
+        return /[a-z]/.test(contrasenya);
+    }
+    function contieneNumero(contrasenya) {
+        return /\d/.test(contrasenya);
+    }
+
+    function validarContrasena() { 
+        const contrasenya = document.getElementById("password").value;
+        const resultado = document.getElementById("resultado");
+
+        //todas las opciones que faltan para contraseña correcta
+        resultado.innerHTML = "";
+        if (!longitudCorrecta(contrasenya)) {
+            resultado.innerHTML += "La contraseña debe tener al menos 8 caracteres";
+        } 
+        if (!contieneMayuscula(contrasenya)) {
+            resultado.innerHTML += "<br> La contraseña debe contener al menos una mayúscula";
+        }
+        if (!contieneMinuscula(contrasenya)) {
+            resultado.innerHTML += "<br> La contraseña debe contener al menos una minúscula";
+        }
+        if (!contieneNumero(contrasenya)) {
+            resultado.innerHTML += "<br> La contraseña debe contener al menos un número";
+        }
+        if (longitudCorrecta(contrasenya) && contieneMayuscula(contrasenya) && contieneMinuscula(contrasenya) && contieneNumero(contrasenya)) {
+            resultado.innerHTML = "La contraseña es válida"
+        }
+
+
+
+        // resultado.innerHTML = "";
+        // if (contrasenya.length < 8) {
+        //     resultado.innerHTML = "La contraseña debe tener al menos 8 caracteres";
+        // } 
+        // if (!/[A-Z]/.test(contrasenya)) {
+        //     resultado.innerHTML += "<br> La contraseña debe contener al menos una mayúscula";
+        // }
+        // if (!/[a-z]/.test(contrasenya)) {
+        //     resultado.innerHTML += "<br> La contraseña debe contener al menos una minúscula";
+        // }
+        // if (!/\d/.test(contrasenya)) {
+        //     resultado.innerHTML += "<br> La contraseña debe contener al menos un número";
+        // } else {
+        //     resultado.textContent = "La contraseña es válida";
+        // }
+
+
+
+        // if (contrasenya.length < 8) {
+        //     resultado.textContent = "La contraseña debe tener al menos 8 caracteres";
+        // } else if (!/[A-Z]/.test(contrasenya)) {
+        //     resultado.textContent = "La contraseña debe contener al menos una mayúscula";
+        // } else if (!/[a-z]/.test(contrasenya)) {
+        //     resultado.textContent = "La contraseña debe contener al menos una minúscula";
+        // } else if (!/\d/.test(contrasenya)) {
+        //     resultado.textContent = "La contraseña debe contener al menos un número";
+        // } else {
+        //     resultado.textContent = "La contraseña es válida";
+        // }
+
+    }
+    // Asignar la función "validarContrasena" al evento onclick del botón "Validar Contraseña"
+    document.getElementById("validarBtn").addEventListener("click", validarContrasena);
+  </script>
+
+</body>
+</html>

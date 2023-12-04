@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(232, 232, 232);
+}
+
+/* Etiquetas, tags. Web para colores www.htmlcolorcodes.com */
+/* padding es espacio entre la línea y el texto en un botón. */
+/* rem x veces el tamaño del texto normal del documento*/
+/* font-family se pueden incluir varias */
+
+h1 {
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(12, 0, 240);
+}
+
+h2{
+    background-color: #7777;
+    color: black;
+    font-size: 17px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}   
+button{
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

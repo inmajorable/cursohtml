@@ -1,0 +1,16 @@
+/*Definir una transición en un botón*/
+button {
+    height: 75px; 
+    width:150px;
+    background-color: rgb(0, 94, 255);
+    color: azure;
+    font-family: system-ui, sans-serif;
+    font-size: 14px;
+
+    transition: background-color 1s ease;
+}
+
+/*Cambiar el color de fondo al pasar el mouse por encima*/
+button:hover {
+    background-color: #3498db;
+}

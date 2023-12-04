@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es, en, nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22nov'23 · Switch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+    </style> 
+</head>
+
+<body>
+    <h3>Comparación Numérica con el operador ternario de comparación Switch</h3>
+
+    <script>
+        //SWITCH pedimos usuario que inserte número
+        //RECORDAR Convertir de string a numérico
+        var numero = prompt("Por favor, inserte un número:");
+        numero = parseFloat(numero);
+        switch (true){
+            case (numero > 0):
+                alert("El número insertado es positivo.");
+                break;
+            case (numero < 0):
+                alert("El número ingresado es negativo.");
+                break;
+            default:
+                alert("El número es igual a certo");
+        }
+
+        let day = 1
+        let dayName = ""
+        switch (true){
+            case 1:
+                dayName = "Mandag"    
+            break;
+            case 2:
+                dayName = "Dinsdag"
+            break;
+            case 3: 
+                dayName = "Woensdag"
+            break;
+            case 4: 
+                dayName = "Donderdag"
+            break;
+            case 5: 
+                dayName = "Vrijdag"
+            break;
+            case 6: 
+                dayName = "Zaterdag"
+            break;
+            case 7: 
+            
+        }
+
+    </script>
+</body>
+</html>
